@@ -4,7 +4,7 @@ const { Readability } = require("@mozilla/readability");
 const { JSDOM } = require('jsdom');
 
 function getPageContent(url) {
-  const proto = url.charAt(4) == "s" ? https : http;
+  const proto = url.charAt(4) === "s" ? https : http;
 
   return new Promise((resolve, reject) => {
     proto
